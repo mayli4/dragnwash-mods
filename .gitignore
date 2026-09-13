@@ -1,0 +1,9 @@
+bin/
+obj/
+.vs/
+*.user
+*.idea
+lib/
+*.MMHOOK.dll
+MMHOOK_*.dll
+Assembly-CSharp.dll
