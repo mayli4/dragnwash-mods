@@ -1,0 +1,73 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>Meshlet.Noclip</AssemblyName>
+
+      <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="Assembly-CSharp">
+        <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Drag'n Wash\DragNWash_Data\Managed\Assembly-CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="BepInEx">
+        <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Drag'n Wash\BepInEx\core\BepInEx.dll</HintPath>
+      </Reference>
+      <Reference Include="com.naelstrof.spherecast">
+        <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Drag'n Wash\DragNWash_Data\Managed\com.naelstrof.spherecast.dll</HintPath>
+      </Reference>
+      <Reference Include="MMHOOK_Assembly-CSharp">
+        <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Drag'n Wash\BepInEx\plugins\MMHOOK\Managed\MMHOOK_Assembly-CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="NaelstrofRaliv.DynamicPenetrationForGames">
+        <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Drag'n Wash\DragNWash_Data\Managed\NaelstrofRaliv.DynamicPenetrationForGames.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.InputSystem">
+        <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Drag'n Wash\DragNWash_Data\Managed\Unity.InputSystem.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.Mathematics">
+        <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Drag'n Wash\DragNWash_Data\Managed\Unity.Mathematics.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine">
+        <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Drag'n Wash\DragNWash_Data\Managed\UnityEngine.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.AnimationModule">
+        <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Drag'n Wash\DragNWash_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.CoreModule">
+        <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Drag'n Wash\DragNWash_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.HierarchyModule">
+        <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Drag'n Wash\DragNWash_Data\Managed\UnityEngine.HierarchyModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.InputModule">
+        <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Drag'n Wash\DragNWash_Data\Managed\UnityEngine.InputModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.PhysicsModule">
+        <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Drag'n Wash\DragNWash_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+      </Reference>
+      <Reference Include="YarnSpinner">
+        <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Drag'n Wash\DragNWash_Data\Managed\YarnSpinner.dll</HintPath>
+      </Reference>
+      <Reference Include="YarnSpinner.Unity">
+        <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Drag'n Wash\DragNWash_Data\Managed\YarnSpinner.Unity.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="GoldMeridian.KeyGen" Version="1.0.1" />
+      <PackageReference Include="Krafs.Publicizer" Version="2.3.2">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Publicize Include="Assembly-CSharp" IncludeCompilerGeneratedMembers="false" IncludeVirtualMembers="false" />
+    </ItemGroup>
+
+</Project>
